@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POUR Principper</title>
+    <script src="https://kit.fontawesome.com/1c18df3eaf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <!-- i.fa-solid-->
+    <a href="index.html">
+        <i class="fa fa-home" aria-hidden="true"></i>
+    </a>
+
+        <i class="fa-solid fa-bars"></i>
+        <!-- nav>ul>li*4>a{Lorem} + tab -->
+        <nav>
+            <ul>
+                <li><a href="crap.html">CRAP</a></li>
+                <li><a href="pour.html">POUR</a></li>
+                <li><a href="rwd.html">RWD</a></li>
+                <li><a href="brugertest.html">Brugertest</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="head-box">
+            <h1>Hvad er P.O.U.R? </h1>
+            <p class="info-text">
+                
+            P.O.U.R. står for "Perceptible, Operable, Understandable, and Robust," og det er en grundlæggende designprincip inden for webudvikling, der sigter mod at forbedre tilgængeligheden for brugere, især dem med forskellige funktionsnedsættelser. Disse principper er fastlagt af Web Content Accessibility Guidelines (WCAG), der er en international standard designet til at gøre webindhold mere tilgængeligt for alle brugere, uanset deres evner.
+            </p>
+        </section>
+
+       <section class="container">  
+                <section class="column">
+                    <h2>Perceivable</h2>
+                    <p class="info-text">
+                       <span class="block"> 
+                        Princippet "Perceivable" inden for webtilgængelighed fokuserer på at gøre information og brugergrænseflader opfattelige for alle brugere. Handler om at sikre, at informationen og brugergrænsefladen er opfattelige af alle brugere, herunder dem med nedsat syn eller hørelse.
+                        For at opfylde dette princip bør tekstindhold ledsages af alternative tekster til billeder, farver og layout skal være letlæselige og kontrastfulde.
+                        I forhold til udvikling bør HTML-elementerne bruge meningsfulde tags som fx header, nav, main, section, og footer, istedet for kun div, hvilket gør koden mere letlæselig og semantisk.
+                        Billeder bør have alternative tekster (alt attribut), hvilket gør dem funktionel for brugere med synshandicap.
+                       </span> 
+                       </p>
+
+
+                       <img src="images/pour-kode.png" alt="Et billede der viser koden hvor et billed får en alt-text ">
+
+                       <p>
+                       <span class="block"> 
+                        Så er der visuelt hierarki ved at variere kontrasten mellem forskellige elementer. Konsistent stil:
+                      </span>
+                        der er en ensartet kontrastniveau på tværs af hele siden for at give et sammenhængende udseende.  
+                    </p>
+                </section>
+            
+                <section class="column">
+                    <h2>Operable</h2>
+                    <p class="info-text">
+                        Fokuserer på at skabe grænseflader, der er brugbare af alle brugere, inklusive dem med motoriske eller kognitive udfordringer.
+                        Der er implementeret responsivt design med medieforespørgsler (@media), hvilket gør websiden betjenbar på forskellige enheder og skærmstørrelser.
+                        Navigationsmenuen (burger-ikon) kan styres af brugeren og er synlig, hvilket gør navigationen tilgængelig for alle.
+                    </p>
+                    
+                  </section>
+                <section class="column">
+                    <h2>Understandable</h2>
+                    <p class="info-text">
+                        Handler om at sikre, at information og brugerinteraktion er letforståelige for alle brugere, uanset deres baggrund eller evner.
+                        Eksempel: At bruge klare og enkle sprogbrug samt at organisere indholdet på en logisk måde.
+                        HTML og CSS-koden er organiseret og kommenteret, hvilket gør det lettere for udviklere at forstå og vedligeholde koden.
+                        Teksten på siden er klart struktureret med overskrifter og afsnit, hvilket gør indholdet forståeligt.
+                    </p>
+                    <img src="images/" alt="Et billede">
+                    <p class="info-text">
+                        Formularer og interaktive elementer leveres med klare og koncise instruktioner for at hjælpe brugere med at udfylde dem korrekt.
+                        Fejlmeddelelser er informative og guider brugeren til korrektion af eventuelle fejl i formularindsendelse.
+                    </p>
+                    <img src="images/" alt="Et billede">
+                </section>
+                <section class="column">
+                    <h2>Robust</h2>
+                    <p class="info-text">
+                        Fokuserer på at udvikle webindhold, der er robust og kompatibelt med forskellige teknologier og enheder.
+                        Eksempel: At kode webstedet, så det fungerer på forskellige browsere og enheder uden problemer.
+                        Der er anvendt korrekte og valide HTML-tags, hvilket gør koden robust og mere modstandsdygtig over for ændringer i webstandarder. Websiden er testet på forskellige browsere og enheder for at sikre, at den fungerer korrekt på forskellige platforme.
+                        Koden anvender moderne webstandarder og er skrevet på en måde, der gør det lettere at tilføje nye funktioner eller justere eksisterende uden at bryde tilgængeligheden.
+                    </p>
+                    <img src="images/" alt="Et billede">
+                
+                </section>
+
+                <section class="column">
+                    <h3>Referencer</h3>
+                    <dl>
+                        <dt>https://www.w3.org/TR/WCAG21/#text-spacing</dt>
+                        <dd>- Success Criterion 1.4.12 Text Spacing</dd>
+                        <dt>https://www.w3.org/TR/WCAG21/#text-alternatives</dt>
+                        <dd>- Guideline 1.1 Text Alternatives</dd>
+                        <dt>https://www.w3.org/TR/WCAG21/#page-titled</dt>
+                        <dd>- Success Criterion 2.4.2 Page Titled</dd>
+                        <dt>https://www.w3.org/TR/WCAG21/</dt>
+                        
+                      </dl>
+                </section>
+            </section>
+          
+          </main>
+          
+         
+          <footer>
+              <p>© 2023 LHK. Alle rettigheder forbeholdt.</p>
+          </footer>
+
+
+</html>

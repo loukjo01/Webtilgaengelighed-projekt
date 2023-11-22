@@ -1,0 +1,165 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+img {
+    max-width: 100%;
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 100px 1fr 70px;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: rgba(1, 1, 49);
+    text-align: left;    
+}
+
+header i {
+    font-size: 2.5em;
+}
+header nav {
+    display: none;
+}
+
+ul {
+
+    list-style-type: none;
+    padding: 0;
+    font-size: 18px;
+  }
+
+/* home*/
+header a i.fa-home {
+    color: #f2f2f2; /* præcist selektor henviser ti header*/
+  }
+
+.fa-solid {
+  color: white;
+}
+
+  a {
+    text-decoration: none;
+    color: #f2f2f2;
+    font-weight: bold;
+  }
+  
+
+  .header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+    
+  }
+
+
+  
+/*main*/
+h2 {
+  color: black;
+  text-decoration: underline;
+}
+
+h3 {
+  padding-top: 10px;
+}
+
+.head-box {
+  display: flex; /* Ændret til flex */
+  flex-wrap: wrap; /* Tilføjet for at håndtere indhold, der ikke passer i bredden */
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: left;
+  background-color: #dce5ed; /* Tilføjet baggrundsfarve */
+  padding: 20px; /* Tilføjet indvendig afstand for bedre synlighed af baggrundsfarven */
+  color: black;
+}
+
+.block {
+  display: block; /* Gør hvert span-element til et blok, der starter på en ny linje */
+  margin-bottom: 10px; /* margin mellem blokkene for bedre læsbarhed */
+  /* Tilføj yderligere styling efter behov */
+}
+
+.column img.opacity-effect {
+  opacity: 1.0; /* Start med fuld synlighed*/
+  transition: opacity 0.3s ease; /* Tilføj en overgangseffekt for en smidig ændring */
+}
+
+.column img.opacity-effect:hover {
+  opacity: 0.7; /* Juster værdien af opacity (0.0 til 1.0) ved hover */
+}
+
+.info-text {
+  padding:10px;
+}
+
+  .container {
+    display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 10px;
+      background: linear-gradient(to bottom, #dde6ee,  #010131);
+  }
+  
+  .column {
+    background-color: white;
+    padding: 5px;
+    text-align: left;
+    border-radius: 5px;
+  
+  }
+  
+
+/*Footer*/
+
+  footer {
+    background-color: #010131;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    
+    
+    
+  }
+  
+
+  /* @media/Responsive*/ 
+  
+  @media screen and (max-width: 700px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+    
+    
+  }
+  
+  @media only screen and (min-width: 700px) {
+    .fa-bars {
+        display: none;
+    }
+    header nav {
+        display: block;
+        
+    }
+    ul {
+        display: flex; 
+        list-style-type: none;
+        padding: 0;
+        gap: 40px;
+
+
+    }
+  }
+  
